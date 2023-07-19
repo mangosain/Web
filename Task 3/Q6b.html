@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22MCA0321</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="">
+            <table>
+                <tr>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td colspan="2">
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td colspan="2">
+                        <div class="radioBtns">
+                            <input type="radio" name="type" value="sup">
+                            <label for="sup">Supreme</label><br>
+        
+                            <input type="radio" name="type" value="veg">
+                            <label for="veg">Vegetarain</label><br>
+        
+                            <input type="radio" name="type" value="hawa">
+                            <label for="hawa">Hawaiian</label><br>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td>
+                        <select name="sauces">
+                            <option value="tomato"> Tomato </option>
+                            <option value="sauce2"> Sauce 2 </option>
+                            <option value="sauce3"> Sauce 3 </option>
+                            <option value="sauce4"> Sauce 4 </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <fieldset class="radioBtns" style="display: flex;">
+                            <input type="radio" name="extra" value="EC">
+                            <label for="EC">Extra Cheese</label><br>
+                    
+                            <input type="radio" name="extra" value="GFB">
+                            <label for="GFB">Gluten Free Base</label><br>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        Delivery instructions:
+                        <br>
+                        <textarea name="" id="" cols="50" rows="6"></textarea> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button>Send my Order</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

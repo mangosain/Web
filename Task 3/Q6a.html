@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22MCA0321</title>
+    <style>
+      table {
+        width: 350px;
+        border: 1px solid black;
+      }
+
+      td {
+        text-align: left;
+      }
+
+      th {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form action="">
+        <table>
+          <tr>
+            <th colspan="2" style="background-color: grey">
+              The World of Fruit
+            </th>
+          </tr>
+
+          <tr>
+            <th colspan="2">Fruit Survey</th>
+          </tr>
+
+          <tr>
+            <th><label for="name">Name</label></th>
+            <td><input id="name" type="text" /></td>
+          </tr>
+
+          <tr>
+            <th><label for="address">Address</label></th>
+            <td><input type="text" id="address" /></td>
+          </tr>
+
+          <tr>
+            <th><label for="email">Email</label></th>
+            <td><input type="text" id="email" /></td>
+          </tr>
+
+          <tr>
+            <th>How many pieces of food do you wat per day</th>
+            <td>
+              <div class="radioBtns">
+                <input type="radio" name="grp1" value="0" />
+                <label for="0">0</label><br />
+
+                <input type="radio" name="grp1" value="1" />
+                <label for="1">1</label><br />
+
+                <input type="radio" name="grp1" value="2" />
+                <label for="2">2</label><br />
+
+                <input type="radio" name="grp1" value="more" />
+                <label for="more">More than 2</label><br />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>My favorite fruit</th>
+            <td>
+              <select name="fruits" size="4" multiple="multiple">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Plum">Plum</option>
+                <option value="Pomegranate">Pomegranate</option>
+                <option value="Pineapple">Pineapple</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Would you like a brochure?</th>
+            <td>
+              <input type="checkbox" name="yes/no" id="yn" />
+            </td>
+          </tr>
+
+          <tr>
+            <th></th>
+            <td>
+              <button style="margin-bottom: 10px">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

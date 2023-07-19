@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 430px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: rgb(23, 130, 217);
+  display: flex;
+  padding: 0 0 0 10px;
+  width: 98%;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+nav p {
+  font-size: 18px;
+}
+
+nav img {
+  width: 70%;
+  height: 13em;
+  margin: auto;
+}
+
+#containerDetails {
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 100vw;
+  color: white;
+  padding: 10px 25px;
+}
+
+#containerDetails #name {
+  font-size: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 5px ;
+  font-weight: 600;
+}
+
+#containerDetails #domain {
+  font-size: 22px;
+  margin: 15px 0px;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+#containerDetails a {
+  color: white;
+}
+
+#containerDetails #name h1 {
+  font-size: 30px;
+}
+
+#personalDetails {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.details {
+  line-height: 35px;
+}
+
+.details a {
+  text-decoration: none;
+}
+
+#bodyContainer {
+  padding: 30px 50px;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+#bodyContainer .block .title {
+  margin-top: 25px;
+  color: rgb(23, 130, 217);
+  letter-spacing: 3px;
+}
+
+.content {
+  display: flex;
+}
+
+.content .year {
+  margin: 40px 50px 10px 40px;
+}
+
+.content .school {
+  margin: 40px 50px 10px 0px;
+}
+
+.content .activities {
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+#objective {
+  text-align: justify;
+}

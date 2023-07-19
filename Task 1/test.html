@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is a webpage</title>
+  <script>
+    function printName() {
+      document.getElementById("output").innerText = "Manav Gosain";
+    }
+    
+    function printNumbers() {
+      var numbers = "";
+      for (var i = 1; i <= 10; i++) {
+        numbers += i + " ";
+      }
+      document.getElementById("output").innerText = numbers;
+    }
+    
+    function printMessageAndTitle() {
+      var currentDate = new Date().toDateString();
+      document.getElementById("output").innerText = "When was this webpage created?\nCheck page's title for the answer.";
+      document.title = currentDate;
+    }
+    
+    function printCustomText() {
+      document.getElementById("output").innerText = "Custom text of your choice";
+    }
+    
+    setTimeout(function() {
+      location.reload();
+    }, 5000);
+
+    setTimeout(function() {
+        window.location.href = "expired.html";
+    }, 10000);
+    
+  </script>
+</head>
+<body onload="printName(), printName()">
+  <h1>Webpage Demo</h1>
+  <div id="output"></div>
+  <button onclick="printName()">Print Name</button>
+  <button onclick="printNumbers()">Print Numbers</button>
+  <button onclick="printMessageAndTitle()">Print Message and Title</button>
+  <button onclick="printCustomText()">Print Custom Text</button>
+</body>
+</html>

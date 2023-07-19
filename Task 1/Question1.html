@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>This is a webpage</title>
+</head>
+<body onload="">
+    <p>Manav Gosain</p>
+    <p>Numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
+    <p onclick="printDate()">When was this webpage created? Check page's title for the answer." </p>
+    <div id="output"></div>
+    <button onclick="printCustomText()">Click for Custom text</button>
+    <button onclick="expirePage()">Click me to expire the page</button>
+
+    <script>
+        function printDate() {
+            var currentDate = new Date().toDateString();
+            document.title = currentDate;
+        }
+
+        function printCustomText() {
+            document.getElementById("output").innerText = "Custom text";
+        }
+
+
+        setTimeout(function() {
+            location.reload();
+        }, 5000);
+
+        function expirePage() {
+            setTimeout(function() {
+                window.location.href = "expired.html";
+            }, 0);      
+        }
+    </script>
+</body>
+</html>

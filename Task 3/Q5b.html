@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22MCA0321</title>
+    <style>
+        .spc_col{
+            background-color: gray;
+        }
+
+        .main_tbl2, .main_tbl2 td, .main_tbl2 th{
+            border: 2px black solid;
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <table class="main_tbl2">
+            <tr>
+                <th colspan="4">Table Heading Cell Spanning 4 Columns</th>
+            </tr>
+            <tr>
+                <td>Normal Cell</td>
+                <td colspan="2">Cell spanning 2 columns</td>
+                <td>Normal cell</td>
+            </tr>
+            <tr>
+                 <td class="spc_col" rowspan="3">Cell spanning 3 <br> rows with a gray(US Spelling) <br> background</td>
+                 <td>Normal Cell</td>
+                 <td>Normal Cell</td>
+                 <td>Normal Cell</td>
+            </tr>
+             <tr>
+                <td>Normal Cell</td>
+                <td rowspan="2" colspan="2">Cell spanning 2 rows and 2 columns</td>
+            </tr>
+            <tr>
+                <td>Normal Cell</td>
+             </tr>
+        </table>
+    </center>
+</body>
+</html>
