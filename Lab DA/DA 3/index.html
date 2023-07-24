@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAT Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="registrationForm">
+        <h2>PAT Registration Form</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="registerNumber">Register Number:</label>
+          <input type="text" id="registerNumber" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" required />
+        </div>
+        <div class="form-group">
+          <label for="dob">DOB (dd/mm/yy):</label>
+          <input type="text" id="dob" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" required />
+        </div>
+        <div class="form-group" style="justify-content: space-between">
+          <label>Gender:</label>
+          <label for="male"
+            >Male
+            <input type="radio" id="male" name="gender" value="Male" required
+          /></label>
+
+          <label for="female"
+            >Female
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+              required
+          /></label>
+
+          <label for="other"
+            >Other
+            <input type="radio" id="other" name="gender" value="Other" required
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="programme">Programme:</label>
+          <select id="programme" required>
+            <option value="">Select Programme</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="Ph.D.">Ph.D.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input type="number" id="year" required />
+        </div>
+        <div class="form-group">
+          <label for="semester">Semester:</label>
+          <input type="number" id="semester" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="areaOfInterest">Area of Interest:</label>
+          <textarea id="areaOfInterest" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cgpa">CGPA:</label>
+          <input type="number" id="cgpa" step="0.01" required />
+        </div>
+        <div class="form-group">
+          <button type="submit" onclick="validateForm()">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

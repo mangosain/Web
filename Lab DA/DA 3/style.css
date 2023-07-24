@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('./bg.jpg') no-repeat center center fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 20px;
+    padding: 30px 50px;
+    width: 500px;
+    box-shadow: 0 4px 32px 0 rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    height: 90%;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    /* Add spacing between label and input */
+    flex-basis: 100px;
+    /* Set fixed width for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #62a9e494;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+textarea {
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.13);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
