@@ -87,7 +87,7 @@ nav ul {
     border-radius: 15px;
     box-shadow: inset 0px 12px 12px -6px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex: column;
+    flex-direction: column;
 }
 
 .right {
