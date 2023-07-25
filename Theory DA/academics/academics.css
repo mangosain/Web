@@ -146,3 +146,14 @@ nav ul {
 ol {
     margin-left: 40px;
 }
+
+.footer {
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    background: linear-gradient(#5b9b69, #2e4f32);
+    color: white;
+}
+
+.footer p {
+    font-size: 20px;
+}
