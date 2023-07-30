@@ -2,7 +2,6 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['username'])) {
-    // Sanitize and store the username in the session variable
     $_SESSION['username'] = htmlspecialchars($_POST['username']);
 }
 ?>
@@ -10,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page 1</title>
+    <title>22MCA0321 | Page 1</title>
 </head>
 <body>
     <h1>Welcome to the Main Page</h1>

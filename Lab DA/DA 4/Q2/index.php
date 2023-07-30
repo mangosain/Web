@@ -94,30 +94,25 @@
         <?php
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $targetDirectory = "uploads/";
-            $maxFileSize = 10 * 1024 * 1024; // 10 MB
-        
-            // Check if a file was uploaded
+            $maxFileSize = 10 * 1024 * 1024;
+
             if (isset($_FILES["file"]) && $_FILES["file"]["error"] === UPLOAD_ERR_OK) {
                 $fileName = $_FILES["file"]["name"];
                 $fileSize = $_FILES["file"]["size"];
                 $fileTmpName = $_FILES["file"]["tmp_name"];
-        
-                // Validate file extension
+
                 if (!isValidFileExtension($fileName)) {
                     showError("Error: Invalid file extension. Only .doc, .docx, and .pdf files are allowed.");
                 }
-        
-                // Validate file size
+
                 elseif (!isValidFileSize($fileSize, $maxFileSize)) {
                     showError("Error: File size exceeds the maximum limit of 10 MB.");
                 }
-        
-                // Check if the file already exists
+
                 elseif (isFileAlreadyUploaded($fileName, $targetDirectory)) {
                     showError("Error: File with the same name already exists. Please upload a different file.");
                 }
-        
-                // Move the uploaded file to the target directory
+
                 elseif (move_uploaded_file($fileTmpName, $targetDirectory . $fileName)) {
                     showSuccess("File uploaded successfully.");
                 } else {

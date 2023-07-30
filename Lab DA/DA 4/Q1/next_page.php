@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Next Page</title>
+    <title>22MCA0321 | Next Page</title>
 </head>
 <body>
     <h1>Welcome to the Next Page</h1>
